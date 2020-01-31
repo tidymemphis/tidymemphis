@@ -34,11 +34,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              written by <strong>{author}</strong>, Natchez-born, Memphis-raised. Urban Planning Masters candidate from the University of Memphis.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                do not follow her on twitter
               </a>
             </p>
           </Container>
