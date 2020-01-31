@@ -1,6 +1,6 @@
 backend:
   name: tidymemphis
-  repo: tidymemphis
+  repo: tidymemphis/tidymemphis
 
 media_folder: static/assets
 public_folder: assets
