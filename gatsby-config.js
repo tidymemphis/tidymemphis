@@ -4,7 +4,7 @@ module.exports = {
     title: `idea palace`,
     author: `sarah johnson`,
     description: `i have no idea what I'm doing.`,
-    siteUrl: `tidymemphis.com`,
+    siteUrl: `https://github.com/tidymemphis/tidymemphis.git`,
     social: {
       twitter: `tidymemphis`,
     },
