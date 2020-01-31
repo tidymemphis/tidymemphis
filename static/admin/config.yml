@@ -1,5 +1,5 @@
 backend:
-  name: tidymemphis
+  name: github
   repo: tidymemphis/tidymemphis
 
 media_folder: static/assets
