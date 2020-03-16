@@ -15,10 +15,6 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`]}
         />
-        <img style={{ margin: 0 }} src="./waitress.webp" alt="not a real Memphis server" />
-        <h1>
-          Memphis Service Workers{" "}
-        </h1>
         <p>The service industry is built around gatherings. </p>
         <p>That's why this industry has been, and will be, hit hard by the coronavirus. </p>
         <p>We agree that drastic measures must be taken to stop the spread of the virus,
