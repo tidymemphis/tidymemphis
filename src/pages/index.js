@@ -7,28 +7,31 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "welcome to a mess"
+    const siteTitle = "Help Memphis Service Workers"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`]}
         />
-        <img style={{ margin: 0 }} src="./bts-0.jpg" alt="Gatsby Scene" />
+        <img style={{ margin: 0 }} src="./waitress.webp" alt="not a real Memphis server" />
         <h1>
-          not yet not yet{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
+          Memphis Service Workers{" "}
         </h1>
-        <p>200131: I pulled an all-nighter and figured out how to get this site to say more than hello world</p>
-        <p>I'm sarah, a 25 year old grad student pursuing my masters Urban Planning.</p>
-        <p>last november, I began learning R and I thought it'd be a good idea to have a website to post my plots</p>
-        <p>I had no programming experience but LOOK AT ME NOW.</p><p></p>
-        <p>all this work so I could still use someone else's template, lol.</p>
+        <p>The service industry is built around gatherings. </p>
+        <p>That's why this industry has been, and will be, hit hard by the coronavirus. </p>
+        <p>We agree that drastic measures must be taken to stop the spread of the virus,
+        including closing bars and restaurants.</p>
+
+        <p>tidymemphis is a union of service industry workers determined to help during this pandemic.</p>
+        <p>We offer indoor and outdoor cleaning services throughout Shelby County,
+        and are committed to making our community healthier.</p>
+        <p>By hiring our union, you are supporting workers temporarily displaced by this virus.</p>
+        <p>You can also donate to our union,
+        and all proceeds will be used to help pay the bills of service industry workers and establishments.</p>
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <Button marginTop="35px">Learn More</Button>
         </Link>
       </Layout>
     )
