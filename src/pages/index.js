@@ -1,34 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
+
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Help Memphis Service Workers"
+    const siteTitle = "Help Memphis Service Industry Workers"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`]}
+          keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`, `service industry`, `servers`, `restaurants`]}
         />
-        <p>The service industry is built around gatherings. </p>
-        <p>That's why this industry has been, and will be, hit hard by the coronavirus. </p>
-        <p>We agree that drastic measures must be taken to stop the spread of the virus,
-        including closing bars and restaurants.</p>
 
-        <p>tidymemphis is a union of service industry workers determined to help during this pandemic.</p>
-        <p>We offer indoor and outdoor cleaning services throughout Shelby County,
-        and are committed to making our community healthier.</p>
-        <p>By hiring our union, you are supporting workers temporarily displaced by this virus.</p>
-        <p>You can also donate to our union,
-        and all proceeds will be used to help pay the bills of service industry workers and establishments.</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Learn More</Button>
-        </Link>
+        <p>This website will be dedicated to helping Memphians affected by the coronavirus.</p>
+        <p><a href={`https://docs.google.com/spreadsheets/d/1ToAhSOm0SN7u0blufJVNU8i-Tf24zGz5LHg8ClfnCk8/edit?usp=sharing`}>
+          Memphis Virtual Tip Jar
+        </a></p>
+        <p><a href={`https://docs.google.com/forms/d/e/1FAIpQLSd50axYGcCPOn5NRE_gw52n36hgJDLw5vhDCDDOClAILkB_eg/viewform?usp=sf_link`}>
+          Get added to the list.
+          </a></p>
+
       </Layout>
     )
   }

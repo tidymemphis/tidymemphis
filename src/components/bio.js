@@ -34,7 +34,7 @@ function Bio() {
               }}
             />
             <p>
-              written by <strong>{author}</strong>, Natchez-born, Memphis-raised. Urban Planning Masters candidate from the University of Memphis.
+              <strong>{author}</strong> has worked in the service industry since 2016. She has a background in economic and urban planning, and is committed to helping out fellow service industry workers through the pandemic.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 do not follow her on twitter
