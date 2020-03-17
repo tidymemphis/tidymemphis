@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `idea palace`,
+    title: `Memphis Coronavirus Help`,
     author: `sarah johnson`,
-    description: `i have no idea what I'm doing.`,
+    description: `here to help Memphians through the coronavirus.`,
     siteUrl: `https://github.com/tidymemphis/tidymemphis.git`,
     social: {
       twitter: `tidymemphis`,
