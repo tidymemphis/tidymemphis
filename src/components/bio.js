@@ -34,11 +34,12 @@ function Bio() {
               }}
             />
             <p>
-              <strong>{author}</strong> has worked in the service industry since 2016. She has a background in economic and urban planning, and is committed to helping out fellow service industry workers through the pandemic.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                do not follow her on twitter
-              </a>
+            <strong>{author}</strong>.
+
+     {` `}
+     <a href={`https://twitter.com/${social.twitter}`}>
+       do not follow her on twitter
+     </a>
             </p>
           </Container>
         )
