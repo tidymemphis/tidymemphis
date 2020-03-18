@@ -1,5 +1,7 @@
 Wanna help create a Memphis dedicated COVID-19 resource?
 
+from: https://www.reddit.com/r/memphis/comments/fklyi5/wanna_help_create_a_memphis_dedicated_covid19/ 
+
 I posted yesterday about the virtual tip jar, and I've been happy to see it gaining some traction and I'm putting out a call to help for other programmers to help me build a resource to help people navigate what's coming.
 
 I started programming very very recently. Like I just started with R in November, but I managed to scrap together a website with gatsby. I planned to use tidymemphis for a stats blog to help me get a job. the name tidymemphis is based on the tidyverse in R, a bunch of people dedicated to organizing and standardizing data collection, and I wanted to take that idea but apply it to Memphis.
