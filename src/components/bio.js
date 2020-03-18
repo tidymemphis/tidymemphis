@@ -34,7 +34,12 @@ function Bio() {
               }}
             />
             <p>
-              
+            <strong>{author}</strong>.
+
+     {` `}
+     <a href={`https://twitter.com/${social.twitter}`}>
+       do not follow her on twitter
+     </a>
             </p>
           </Container>
         )
