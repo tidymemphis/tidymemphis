@@ -1,11 +1,8 @@
-Wanna help create a Memphis dedicated COVID-19 resource?
+Memphis COVID-19 resource list
 
-I posted yesterday about the virtual tip jar, and I've been happy to see it gaining some traction and I'm putting out a call to help for other programmers to help me build a resource to help people navigate what's coming.
+This is intended to be an open-source list of resources available for Memphians during the COVID-19 outbreak. Feel free to add however you think will help.
 
-I started programming very very recently. Like I just started with R in November, but I managed to scrap together a website with gatsby. I planned to use tidymemphis for a stats blog to help me get a job. the name tidymemphis is based on the tidyverse in R, a bunch of people dedicated to organizing and standardizing data collection, and I wanted to take that idea but apply it to Memphis.
+Some first things that need to be done:
+probably clean up the bits of the blog that are left. I'll try to do that. But I am VERY new to programming and would like someone to hold my hand through this.
 
-Anyway, I really want to help create a resource to help fellow Memphians during this time. I'm a fast learner, but I'd really love some help. My site is static, the whole thing is on github and please fork it and help me lol. you can still see the evidence of the gatsby blog starter that I'm abandoning.
-
-I was thinking of adding some maps of testing locations. A page for food resources. Housing resources. Just help organize this confusion.
-
-Please help thank you stay safe!
+Create a list of what is needed right now. Information on the disease, testing sites, information on what to expect, and making sure people know what is available at any point in this process. And how do we allow people to change information. 

@@ -67,7 +67,7 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-           <p>programmer? help create a Memphis COVID-19 resource <a href="https://github.com/tidymemphis/tidymemphis">on github.</a></p>
+           <p>an open-source Memphis COVID-19 resource <a href="https://github.com/tidymemphis/tidymemphis">on github.</a></p>
            created by <a href="mailto:sarahviamemphis@gmail.com">sarah johnson</a>.
         </Footer>
       </Wrapper>
