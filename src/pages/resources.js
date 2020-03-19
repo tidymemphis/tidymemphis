@@ -14,7 +14,7 @@ export const query = graphql`
     }
 
     allMdx(
-      sort: { order: DESC, fields: [frontmatter___date]},
+      sort: { order: DESC, fields: [frontmatter___title]},
       filter: {
         fields: {contentType: { eq: "resources" }},
       },
@@ -26,6 +26,7 @@ export const query = graphql`
           }
           frontmatter {
             title
+            description
           }
           excerpt
         }

@@ -13,6 +13,7 @@ const Posts = (props) => {
             },
             frontmatter: {
               title,
+              description
             },
             excerpt
           } = post
@@ -26,7 +27,7 @@ const Posts = (props) => {
                   </Link>
                 </header>
                 <p className='post__excerpt'>
-                  {excerpt}
+                  {description || excerpt}
                 </p>
                 <Link 
                   to={slug}
