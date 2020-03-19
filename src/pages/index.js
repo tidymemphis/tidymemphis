@@ -79,7 +79,7 @@ export const query = graphql`
 class IndexPage extends React.Component {
   render() {
 
-    const siteTitle = "Memphis Service Industry & COVID-19"
+    const siteTitle = "Memphis & COVID-19"
 
     const news = this.props.data.news.edges
     const resources = this.props.data.resources.edges
