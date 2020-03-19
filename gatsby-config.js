@@ -25,25 +25,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/content/closures`,
-        name: `closures`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content/news`,
-        name: `news`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content/resources`,
-        name: `resources`,
-      },
+        name: 'content',
+        path: `${__dirname}/src/content/`
+      }
     },
     {
       resolve: `gatsby-plugin-mdx`,

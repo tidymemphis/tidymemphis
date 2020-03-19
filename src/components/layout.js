@@ -11,6 +11,7 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
+
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
         <h1

@@ -26,7 +26,7 @@ const ResourcePost = (props) => {
 } = props.data.mdx
 
   return (
-    <Layout title={frontmatter.title}>
+    <Layout location={props.location} title={frontmatter.title}>
       <main className='post'>
         <Markdown post={body} />
       </main>

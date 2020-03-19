@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -85,19 +85,23 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`, `service industry`, `servers`, `restaurants`]}
         />
         <main>
+          {console.log(this.props.data.news.edges.slice(0, 4))}
           <section>
             <h2>News: </h2>
-            <Posts edges={this.props.data.news.edges} />
+            <Posts edges={this.props.data.news.edges.slice(0, 4)} />
+            <Link to='/news'>See More News</Link>
           </section>
 
           <section>
             <h2>Resources: </h2>
-            <Posts edges={this.props.data.resources.edges} />
+            <Posts edges={this.props.data.resources.edges.slice(0, 4)} />
+            <Link to='/resources'>See More Resources</Link>
           </section>
 
           <section>
             <h2>Closures: </h2>
-            <Posts edges={this.props.data.closures.edges} />
+            <Posts edges={this.props.data.closures.edges.slice(0, 4)} />
+            <Link to='/closures'>See More Closures</Link>
           </section>
         </main>
         {/* 
