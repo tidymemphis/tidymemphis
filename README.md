@@ -26,6 +26,7 @@ Planned sitemap
 	- School closings etc
 - Displaced workers/tip jar
 	- Is there a way for people to donate to one restaurant and have the donation be dispersed among employees?
+- There is suddenly a lot of need for delivery. Is there a way we can help? Either with restaurants, or seniors that need groceries and prescriptions delivered.
 
 ## COVID-19 & Memphians
 - How many Memphians have it?
