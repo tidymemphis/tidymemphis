@@ -53,7 +53,7 @@ export const query = graphql`
         }
       }
     },
-    
+
 
     closures: allMdx(
       sort: { order: DESC, fields: [frontmatter___date]},
@@ -80,7 +80,7 @@ export const query = graphql`
 class IndexPage extends React.Component {
   render() {
 
-    const siteTitle = "Memphis Service Industry & COVID-19"
+    const siteTitle = "Memphis & COVID-19"
 
     const news = this.props.data.news.edges
     const resources = this.props.data.resources.edges
@@ -90,14 +90,14 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`, `service industry`, `servers`, `restaurants`]}
+          keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`, `service industry`, `servers`, `restaurants`, `tidymemphis`]}
         />
         <main>
           {news.length > 0 ?
             <section>
               <h2>News: </h2>
               <Posts edges={news.slice(0, 4)} />
-              <Link to='/news'>See More News</Link>
+              <Link to='/news'>See All News</Link>
             </section>
           : null}
 
@@ -105,7 +105,7 @@ class IndexPage extends React.Component {
             <section>
               <h2>Resources: </h2>
               <Posts edges={resources.slice(0, 4)} />
-              <Link to='/resources'>See More Resources</Link>
+              <Link to='/resources'>See All Resources</Link>
             </section>
           : null}
 
@@ -113,7 +113,7 @@ class IndexPage extends React.Component {
             <section>
               <h2>Closures: </h2>
               <Posts edges={closures.slice(0, 4)} />
-              <Link to='/closures'>See More Closures</Link>
+              <Link to='/closures'>See All Closures</Link>
             </section>
           : null}
         </main>
