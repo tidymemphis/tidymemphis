@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Memphis Coronavirus Help`,
+    title: `Memphis COVID-19 Guidebook`,
     author: `sarah johnson`,
     description: `here to help Memphians through the coronavirus.`,
     siteUrl: `https://github.com/tidymemphis/tidymemphis.git`,
@@ -16,7 +16,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
