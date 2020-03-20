@@ -93,13 +93,6 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`, `service industry`, `servers`, `restaurants`, `tidymemphis`]}
         />
         <main>
-          {news.length > 0 ?
-            <section>
-              <h2>News: </h2>
-              <Posts edges={news.slice(0, 4)} />
-              <Link to='/news'>See All News</Link>
-            </section>
-          : null}
 
           {resources.length > 0 ?
             <section>
@@ -116,6 +109,15 @@ class IndexPage extends React.Component {
               <Link to='/closures'>See All Closures</Link>
             </section>
           : null}
+
+          {news.length > 0 ?
+            <section>
+              <h2>News: </h2>
+              <Posts edges={news.slice(0, 4)} />
+              <Link to='/news'>See All News</Link>
+            </section>
+          : null}
+          
         </main>
       </Layout>
     )
