@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import Helmet from 'react-helmet'
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -10,6 +11,7 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
+
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
@@ -55,6 +57,13 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
+        <Helmet>
+        <script 
+          async
+          src="//gc.zgo.at/count.js"
+          data-goatcounter="https://tidymemphis.goatcounter.com/count"
+        />
+        </Helmet>
         <div
           style={{
             marginLeft: `auto`,

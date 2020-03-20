@@ -1,13 +1,90 @@
-import React from "react"
-
+import React from 'react'
+import { graphql, Link } from 'gatsby'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Posts from '../components/posts'
 
+export const query = graphql`
+  query IndexPage {
+
+    site {
+      siteMetadata {
+        title
+      }
+    }
+
+    news: allMdx(
+      sort: { order: DESC, fields: [frontmatter___date]},
+      filter: {
+        fields: {contentType: { eq: "news" }},
+      },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            description
+          }
+          excerpt
+        }
+      }
+    },
+
+    resources: allMdx(
+      sort: { order: DESC, fields: [frontmatter___date]},
+      filter: {
+        fields: {contentType: { eq: "resources" }},
+      },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            description
+          }
+          excerpt
+        }
+      }
+    },
+    
+
+    closures: allMdx(
+      sort: { order: DESC, fields: [frontmatter___date]},
+      filter: {
+        fields: {contentType: { eq: "closures" }},
+      },
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            description
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
 
 class IndexPage extends React.Component {
   render() {
+
     const siteTitle = "Memphis Service Industry & COVID-19"
+
+    const news = this.props.data.news.edges
+    const resources = this.props.data.resources.edges
+    const closures = this.props.data.closures.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -15,36 +92,31 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `memphis`, `service industry`, `servers`, `restaurants`]}
         />
+        <main>
+          {news.length > 0 ?
+            <section>
+              <h2>News: </h2>
+              <Posts edges={news.slice(0, 4)} />
+              <Link to='/news'>See More News</Link>
+            </section>
+          : null}
 
-        Send money directly to employees at your favorite restaurants:
-        <p><span role="img" aria-label="money-bag">💰 </span><a href={`https://docs.google.com/spreadsheets/d/1ToAhSOm0SN7u0blufJVNU8i-Tf24zGz5LHg8ClfnCk8/edit?usp=sharing`}>
-          <b>Memphis Virtual Tip Jar</b>
-        </a><span role="img" aria-label="money-bag"> 💰</span></p>
+          {resources.length > 0 ?
+            <section>
+              <h2>Resources: </h2>
+              <Posts edges={resources.slice(0, 4)} />
+              <Link to='/resources'>See More Resources</Link>
+            </section>
+          : null}
 
-        <b><span role="img" aria-label="chef">👩‍🍳</span> Service industry employees <span role="img" aria-label="chef">👩‍🍳</span></b>
-
-        <p>To file for funemployment, go <a href={`https://www.jobs4tn.gov/`}>here</a>, click <b>Unemployment Benefits</b>, then <b>File a Claim</b> to see if you are eligible for unemployment benefits. You are able to file immediately after you lose your job. </p>
-
-        <p>Fill out <a href={`https://docs.google.com/forms/d/e/1FAIpQLSd50axYGcCPOn5NRE_gw52n36hgJDLw5vhDCDDOClAILkB_eg/viewform?usp=sf_link`}>this form</a> to be added to the tip jar
-         <span role="img" aria-label="money-bag"> 💰</span></p>
-
-        <p><span role="img" aria-label="burger">🍔 </span><b>Restaurant changes/closings:</b><span role="img" aria-label="burger"> 🍔</span>
-        <p><a href={`https://docs.google.com/spreadsheets/d/16g95WUiwiKZtd2a4fvR268E655Sa0n5qY0hMu0Y8Mhw/edit?usp=sharing`}>
-          Here is a list</a> of restaurant changes due to coronavirus.</p></p>
-
-        <p>Enter the status of a restaurant <a href={`https://docs.google.com/forms/d/e/1FAIpQLSfrBhGiTU9czsPqLhF-UgsBOuPPIfL_DkRtgPexAaPFGD6jgQ/viewform?usp=sf_link`}>here</a></p>
-
-
-
-        <p>
-        <span role="img" aria-label="revolving-hearts">💞 </span><b>Other ways to help:</b> <span role="img" aria-label="revolving-hearts"> 💞</span>
-        <p><a href={`https://www.gofundme.com/f/memphisfoodworkers`}>
-          Memphis Food Industry Emergency Worker Assistance
-        </a><p>
-         gofundme by Edible Memphis
-        </p></p></p>
-
-
+          {closures.length > 0 ?
+            <section>
+              <h2>Closures: </h2>
+              <Posts edges={closures.slice(0, 4)} />
+              <Link to='/closures'>See More Closures</Link>
+            </section>
+          : null}
+        </main>
       </Layout>
     )
   }
