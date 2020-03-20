@@ -14,7 +14,7 @@ export const query = graphql`
     }
 
     allMdx(
-      sort: { order: DESC, fields: [frontmatter___title]},
+      sort: { order: DESC, fields: [frontmatter___date]},
       filter: {
         fields: {contentType: { eq: "resources" }},
       },
@@ -36,6 +36,7 @@ export const query = graphql`
 `
 
 const ResourcesPage = props => {
+  console.log(props)
   const {
     frontmatter
   } = props.data.mdx

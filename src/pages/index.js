@@ -33,7 +33,7 @@ export const query = graphql`
         }
       }
     },
-    
+
     resources: allMdx(
       sort: { order: DESC, fields: [frontmatter___date]},
       filter: {
@@ -54,6 +54,7 @@ export const query = graphql`
       }
     },
     
+
     closures: allMdx(
       sort: { order: DESC, fields: [frontmatter___date]},
       filter: {

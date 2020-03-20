@@ -29,11 +29,6 @@ const Posts = (props) => {
                 <p className='post__excerpt'>
                   {description || excerpt}
                 </p>
-                <Link 
-                  to={slug}
-                  className='post__link'>
-                    Read More
-                </Link>
               </article>
             </li>
           )
