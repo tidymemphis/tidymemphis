@@ -58,7 +58,7 @@ class Layout extends React.Component {
     return (
       <Wrapper>
         <Helmet>
-        <script 
+        <script
           async
           src="//gc.zgo.at/count.js"
           data-goatcounter="https://tidymemphis.goatcounter.com/count"
@@ -77,7 +77,7 @@ class Layout extends React.Component {
         </div>
         <Footer>
            <p>an open-source Memphis COVID-19 resource <a href="https://github.com/tidymemphis/tidymemphis">on github.</a></p>
-           created by <a href="mailto:sarahviamemphis@gmail.com">sarah johnson</a>.
+           <p>About <a href="https://tidymemphis.com/news/about">this site.</a></p>
         </Footer>
       </Wrapper>
     )
