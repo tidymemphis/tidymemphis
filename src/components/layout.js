@@ -77,7 +77,7 @@ class Layout extends React.Component {
         </div>
         <Footer>
            <p>an open-source Memphis COVID-19 resource <a href="https://github.com/tidymemphis/tidymemphis">on github.</a></p>
-           <p>About <a href="https://tidymemphis.com/news/about">this site.</a></p>
+           <p><a href="https://tidymemphis.com/news/about">about this site.</a></p>
         </Footer>
       </Wrapper>
     )
