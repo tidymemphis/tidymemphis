@@ -102,6 +102,14 @@ class IndexPage extends React.Component {
             </section>
           : null}
 
+          {news.length > 0 ?
+            <section>
+              <h2>News: </h2>
+              <Posts edges={news.slice(0, 4)} />
+              <Link to='/news'>See All News</Link>
+            </section>
+          : null}
+
           {closures.length > 0 ?
             <section>
               <h2>Closures: </h2>
@@ -110,14 +118,6 @@ class IndexPage extends React.Component {
             </section>
           : null}
 
-          {news.length > 0 ?
-            <section>
-              <h2>News: </h2>
-              <Posts edges={news.slice(0, 4)} />
-              <Link to='/news'>See All News</Link>
-            </section>
-          : null}
-          
         </main>
       </Layout>
     )
